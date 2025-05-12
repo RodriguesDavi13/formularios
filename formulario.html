@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+
+<body >
+    
+    <h1>QUAL É O SEU NOME?</h1>
+    <form action="dav.rod1608@gmail.com" method="post">
+
+        <!--for = Para/ essa labal é para o elemento de id nomeUsuario-->
+        <label for="NomeUsuario"> insira seu nome</label><!--Rótulo-->
+        <input type="text" id="NomeUsuario" size="10"
+            maxlength="28"><!--a propriedade masxlength delimita a quantidade de caracteres que seu inputpode receber-->
+        <br>
+        <p>esse nome é seu?</p>
+        <!--O radio permite que o usuário escolha apenas uma opção de várias, para identificar que rádios diferentes respondem a mesma pergunta colocamos o mesmo nome em todos
+o que diferencia um radio do outro é o seu id, que deve ser único-->
+        <input type="radio" name="SeuNome" id="EsseNomeeSeu" value="SeuNome">
+        <label for="seu">sim</label><br>
+        <input type="radio" name="SeuNome" id="EsseNomeeSeu" value="SeuNome">
+        <label for="seu">não</label><br>
+        <input type="radio" name="SeuNome" id="EsseNomeeSeu" value="SeuNome">
+        <label for="seu">talvez</label><br>
+        <input type="radio" name="SeuNome" id="EsseNomeeSeu" value="SeuNome">
+        <label for="seu">não sei</label><br>
+        <br>
+
+
+        <label for="nome">Quem te chama assim?</label><br>
+        <select id="nome" name="QuemChamaAssim">
+
+            <option value="ninguem">ninguém</option>
+            <option value="familia">Familia</option>
+            <option value="amigo">Amigos</option>
+            <option value="N_A">grupo de apoio &#124 N.A</option>
+            <option value="PM">A policia Militar</option>
+            <option value="aquele">Aquele que correu pra nois caminhar</option><br>
+
+        
+
+        </select><br>
+        <label for="comentario">Comente sobre</label><br>
+        <textarea name="comentario" id="comentario" cols="40" rows="1"></textarea><br>
+
+
+
+
+
+        <input type="submit" value="Enviar formulario"><!--submit faz o envio dos dados preenchidos no formulário-->
+        <!--o "value" faz com que o texto apareça dentro do botão-->
+    </form>
+</body>
+
+</html>

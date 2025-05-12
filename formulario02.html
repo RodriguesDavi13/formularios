@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário 2</title>
+</head>
+
+<body>
+    <form action="" method="get">
+
+        <!--"select" permite que o usuarioselecione dentre opções determinadas-->
+        <select name="seila" id="ondeperderamasmeias">
+
+
+            <option value="SP"> SAMPA MEO </option>
+            <option value="RJ">ERREJOTA </option>
+            <option value="MA">MANAUS </option>
+        </select><br>
+
+
+        <!--datalist cria uma lista de dados que podem ser acessadas pwlo restante do form sendo comumente utilizado para sugestões de preenchimento-->
+        <datalist id=Locomocao>
+
+            <option value="bike">duas rodas</option>
+            <option value="carro">quatro rodas</option>
+            <option value="jegue">quatro patas, quase um cavalo </option>
+            <option value="mula"> quatro patas, quase um jegue</option>
+            <option value="leao">quatro patas, quase um gato</option>
+
+        </datalist>
+        <input autocomplete="on" list="Locomocao" name="MeioDeTransportes" id="MeioDeTransportes" placeholder="seu meio de transporte" /><br>
+
+        0
+        <input type="range" id="quilometros" name="quilometros"/>
+        100 <br></br>
+
+        <!--o "ranger" serve para criar um slider a fim de facilitar a entrada de dados. Um bom exemplo é um slider de volume para o volume de musica-->
+       <input type="submit" value="enviar">
+
+    </form>
+
+</body>
+
+</html>
